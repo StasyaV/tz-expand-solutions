@@ -1,13 +1,13 @@
-@mixin font-medium() {
-  font-family: $font-oswald;
-  font-weight: 500;
+@mixin font-bold() {
+  font-family: $font;
+  font-weight: bold;
 }
 
 @mixin title() {
-  font-family: $font-oswald;
-  color: $font-black;
-  font-size: 36px;
-  line-height: 60px;
+  font-family: $font;
+  color: $title-color;
+  font-size: 42px;
+  line-height: 59px;
   font-weight: normal;
 }
 
