@@ -1,0 +1,28 @@
+.brands {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.brands__list {
+  @include list-reset();
+}
+
+.other-brands {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.other-brands__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.brands__button {
+  margin-bottom: 50px;
+}

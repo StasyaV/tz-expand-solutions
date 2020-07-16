@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <title>Живая Еда "Здоровцов"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__logo logo"></div>
+    <div class="header__logo logo"><img class="logo__image" src="img/logo.png" alt="Логотип магазина"></div>
     <div class="header__button button"><a href="#" class="button__catalog">All Products</a></div>
     <ul class="header__features-list features-list">
       <li class="features-list__item features-list__item--shipping">Shipping</li>
@@ -21,6 +21,7 @@
       <li class="features-list__item features-list__item--wholesale">Wholesale</li>
     </ul>
     <nav class="main-nav">
+      <button type="button" class="main-nav__button main-nav__button--open">Меню</button>
       <ul class="main-nav__list menu-list">
         <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category1</a></li>
         <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category2</a></li>
@@ -33,13 +34,22 @@
   </header>
   <main>
     <section class="product">
-      <div class="product__gallery gallery">
-        <img src="#" alt="Изображение товара" class="gallery__item">
-        <img src="#" alt="Изображение товара" class="gallery__item">
-        <img src="#" alt="Изображение товара" class="gallery__item">
-        <img src="#" alt="Изображение товара" class="gallery__item">
-        <img src="#" alt="Изображение товара" class="gallery__item">
-        <img src="#" alt="Изображение товара" class="gallery__item">
+      <div class="container">
+      <div class="product__slider slider">
+        <ul class="slider__slides slides">
+          <li id="slide1"><img src="img/chips.jpg" alt="Фото продукта"></li>
+          <li id="slide2"><img src="img/image-4.jpg" alt="Фото продукта"></li>
+          <li id="slide3"><img src="img/image-2.jpg" alt="Фото продукта"></li>
+          <li id="slide4"><img src="img/image-3.jpg" alt="Фото продукта"></li>
+          <li id="slide5"><img src="img/image-2.jpg" alt="Фото продукта"></li>
+        </ul>
+        <ul class="slider__thumbnails">
+          <li><a href="#slide1"><img src="img/chips.jpg"></a></li>
+          <li><a href="#slide2"><img src="img/image-4.jpg"></a></li>
+          <li><a href="#slide3"><img src="img/image-2.jpg"></a></li>
+          <li><a href="#slide4"><img src="img/image-3.jpg"/></a></li>
+          <li><a href="#slide5"><img src="img/image-2.jpg"></a></li>
+        </ul>
       </div>
       <div class="product__info info">
         <h1 class="product__title info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
@@ -54,24 +64,25 @@
           Ut enim ad minim veniam.</p>
         <p class="info__description info__description--weight">Weight: <span>50g</span></p>
       </div>
+    </div>
     </section>
     <section class="additional-product">
       <h2 class="additional-product__title">You may also like</h2>
       <ul class="additional-product__list">
         <li class="additional-item">
-          <img src="#" alt="Chocolate Image" class="additional-item__image">
+          <img src="img/image-5.jpg" alt="Chocolate Image" class="additional-item__image">
           <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
           <p class="additional-item__price">16.50$</p>
           <a href="#" class="additional-item__button button">Take a look</a>
         </li>
         <li class="additional-item">
-          <img src="#" alt="Chocolate Image" class="additional-item__image">
+          <img src="img/image-6.jpg" alt="Chocolate Image" class="additional-item__image">
           <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur</p>
           <p class="additional-item__price">102.99</p>
           <a href="#" class="additional-item__button button">Take a look</a>
         </li>
         <li class="additional-item">
-          <img src="#" alt="Chocolate Image" class="additional-item__image">
+          <img src="img/image-7.jpg" alt="Chocolate Image" class="additional-item__image">
           <p class="additional-item__name">Lorem ipsum dolor</p>
           <p class="additional-item__price">2$</p>
           <a href="#" class="additional-item__button button">Take a look</a>
@@ -81,12 +92,12 @@
     <section class="brands">
       <h2 class="visually-hidden">Our brands</h2>
       <ul class="brands__list main-brands">
-        <li class="main-brands__item"></li>
+        <li class="main-brands__item"><img src="img/logo.png" alt="Лого магазина"></li>
       </ul>
       <ul class="brands__list other-brands">
-        <li class="other-brands__list"></li>
-        <li class="other-brands__list"></li>
-        <li class="other-brands__list"></li>
+        <li class="other-brands__item"><img src="img/brands_logo_1.png" alt="Логотипы компаний партнёров"></li>
+        <li class="other-brands__item"><img src="img/brands_logo_2.png" alt="Логотипы компаний партнёров"></li>
+        <li class="other-brands__item"><img src="img/brands_logo_3.png" alt="Логотипы компаний партнёров"></li>
       </ul>
       <div class="brands__button button">All products</div>
     </section>
@@ -94,19 +105,19 @@
       <h2 class="additional-product__title">You may also like</h2>
       <ul class="additional-product__list">
         <li class="additional-item">
-          <img src="#" alt="Chocolate Image" class="additional-item__image">
+          <img src="img/image-5.jpg" alt="Chocolate Image" class="additional-item__image">
           <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
           <p class="additional-item__price">16.50$</p>
           <a href="#" class="additional-item__button button">Take a look</a>
         </li>
         <li class="additional-item">
-          <img src="#" alt="Chocolate Image" class="additional-item__image">
+          <img src="img/image-6.jpg" alt="Chocolate Image" class="additional-item__image">
           <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur</p>
           <p class="additional-item__price">102.99</p>
           <a href="#" class="additional-item__button button">Take a look</a>
         </li>
         <li class="additional-item">
-          <img src="#" alt="Chocolate Image" class="additional-item__image">
+          <img src="img/image-7.jpg" alt="Chocolate Image" class="additional-item__image">
           <p class="additional-item__name">Lorem ipsum dolor</p>
           <p class="additional-item__price">2$</p>
           <a href="#" class="additional-item__button button">Take a look</a>
