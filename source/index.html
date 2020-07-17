@@ -12,7 +12,7 @@
   <header class="header">
     <div class="header__logo logo"><img class="logo__image" src="img/logo.png" alt="Логотип магазина"></div>
     <div class="header__button button"><a href="#" class="button__catalog">All Products</a></div>
-    <ul class="header__features-list features-list">
+    <ul class="header__features-list features-list features-list--header">
       <li class="features-list__item features-list__item--shipping">Shipping</li>
       <li class="features-list__item features-list__item--returns">Returns</li>
       <li class="features-list__item features-list__item--payments">Payments</li>
@@ -35,36 +35,39 @@
   <main>
     <section class="product">
       <div class="container">
-      <div class="product__slider slider">
-        <ul class="slider__slides slides">
-          <li id="slide1"><img src="img/chips.jpg" alt="Фото продукта"></li>
-          <li id="slide2"><img src="img/image-4.jpg" alt="Фото продукта"></li>
-          <li id="slide3"><img src="img/image-2.jpg" alt="Фото продукта"></li>
-          <li id="slide4"><img src="img/image-3.jpg" alt="Фото продукта"></li>
-          <li id="slide5"><img src="img/image-2.jpg" alt="Фото продукта"></li>
-        </ul>
-        <ul class="slider__thumbnails">
-          <li><a href="#slide1"><img src="img/chips.jpg"></a></li>
-          <li><a href="#slide2"><img src="img/image-4.jpg"></a></li>
-          <li><a href="#slide3"><img src="img/image-2.jpg"></a></li>
-          <li><a href="#slide4"><img src="img/image-3.jpg"/></a></li>
-          <li><a href="#slide5"><img src="img/image-2.jpg"></a></li>
-        </ul>
+        <div class="product__slider slider">
+          <ul class="slider__slides slides">
+            <li id="slide1"><img src="img/chips.jpg" alt="Фото продукта"></li>
+            <li id="slide2"><img src="img/image-4.jpg" alt="Фото продукта"></li>
+            <li id="slide3"><img src="img/image-2.jpg" alt="Фото продукта"></li>
+            <li id="slide4"><img src="img/image-3.jpg" alt="Фото продукта"></li>
+            <li id="slide5"><img src="img/image-2.jpg" alt="Фото продукта"></li>
+          </ul>
+          <ul class="slider__thumbnails">
+            <li><a href="#slide1"><img src="img/chips.jpg"></a></li>
+            <li><a href="#slide2"><img src="img/image-4.jpg"></a></li>
+            <li><a href="#slide3"><img src="img/image-2.jpg"></a></li>
+            <li><a href="#slide4"><img src="img/image-3.jpg" /></a></li>
+            <li><a href="#slide5"><img src="img/image-2.jpg"></a></li>
+          </ul>
+        </div>
+        <div class="product__info info">
+          <h1 class="product__title info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          <p class="info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
+            commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.
+            Ut enim ad minim veniam.</p>
+          <p class="info__description info__description--weight">Weight: <span>50g</span></p>
+        </div>
       </div>
-      <div class="product__info info">
-        <h1 class="product__title info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-        <p class="info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam.</p>
-        <p class="info__description info__description--weight">Weight: <span>50g</span></p>
-      </div>
-    </div>
     </section>
     <section class="additional-product">
       <h2 class="additional-product__title">You may also like</h2>
@@ -89,7 +92,7 @@
         </li>
       </ul>
     </section>
-    <section class="brands">
+    <section class="brands container">
       <h2 class="visually-hidden">Our brands</h2>
       <ul class="brands__list main-brands">
         <li class="main-brands__item"><img src="img/logo.png" alt="Лого магазина"></li>
@@ -134,12 +137,13 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
-    <section class="features">
+    <section class="features container">
       <h2 class="visually-hidden">Принципы работы магазина "Живая еда"</h2>
       <p class="features__title">Our policies</p>
-      <ul class="features__list feature-list">
-        <li class="feature-list__item item feature-list__item--shipping">
-          <input type="radio" id="feature-1" name="features-group">
+      <ul class="features__list features-list">
+        <li class="features-list__item item">
+          <input class="features-list__item-tab features-list__item-tab--shipping" type="radio" id="feature-1"
+            name="features-group" checked>
           <label for="feature-1" class="item-title">Shipping</label>
           <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore
@@ -154,8 +158,9 @@
             laborum.
           </p>
         </li>
-        <li class="feature-list__item feature-list__item--returns">
-          <input type="radio" id="feature-2" name="features-group">
+        <li class="features-list__item">
+          <input class="features-list__item-tab features-list__item-tab--returns" type="radio" id="feature-2"
+            name="features-group">
           <label for="feature-2" class="item-title">Returns</label>
           <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore
@@ -170,8 +175,9 @@
             laborum.
           </p>
         </li>
-        <li class="feature-list__item feature-list__item--payments">
-          <input type="radio" id="feature-3" name="features-group">
+        <li class="features-list__item">
+          <input class="features-list__item-tab features-list__item-tab--payments" type="radio" id="feature-3"
+            name="features-group">
           <label for="feature-3" class="item-title">Payments</label>
           <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore
@@ -186,8 +192,9 @@
             laborum.
           </p>
         </li>
-        <li class="feature-list__item feature-list__item--customs">
-          <input type="radio" id="feature-4" name="features-group">
+        <li class="features-list__item">
+          <input class="features-list__item-tab features-list__item-tab--customs" type="radio" id="feature-4"
+            name="features-group">
           <label for="feature-4" class="item-title">Customs</label>
           <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore
@@ -202,8 +209,9 @@
             laborum.
           </p>
         </li>
-        <li class="feature-list__item feature-list__item--warranties">Warranties
-          <input type="radio" id="feature-5" name="features-group">
+        <li class="features-list__item">
+          <input class="features-list__item-tab features-list__item-tab--warranties" type="radio" id="feature-5"
+            name="features-group">
           <label for="feature-5" class="item-title">Warranties</label>
           <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore
@@ -218,8 +226,9 @@
             laborum.
           </p>
         </li>
-        <li class="feature-list__item feature-list__item--wholesale">
-          <input type="radio" id="feature-6" name="features-group">
+        <li class="features-list__item">
+          <input class="features-list__item-tab features-list__item-tab--wholesale" type="radio" id="feature-6"
+            name="features-group">
           <label for="feature-6" class="item-title">Wholesale</label>
           <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore

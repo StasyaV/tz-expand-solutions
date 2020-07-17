@@ -1,4 +1,78 @@
+.features__title {
+@include title-style();
+text-align: center;
+margin-bottom: 25px;
+}
+
 .features-list {
   @include list-reset();
+  font-size: 14px;
+  line-height: 25px;
+  &--header {
+    display: none;
+  }
+}
+
+.item-content {
   display: none;
+  padding: 20px;
+  color: $feature-color;
+  background-color: $tab-background;
+  border: 1px solid $border-color;
+}
+
+.item-title {
+  color: $title-color;
+}
+
+.features-list__item {
+  border: 1px solid $border-color;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.features-list__item-tab:checked ~ .item-content {
+  display: block;
+}
+
+.features-list__item-tab {
+  display: none;
+}
+
+.features-list__item-tab + label::before {
+  content: "";
+  display: inline-block;
+  width: 65px;
+  height: 62px;
+  background-repeat: no-repeat;
+  margin-right: 17px;
+  line-height: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.features-list__item-tab {
+  &--shipping + label::before {
+  background-image: url("../img/shipping-icon.svg");
+  }
+
+  &--returns + label::before {
+    background-image: url("../img/returns-icon.svg");
+  }
+
+  &--payments + label::before {
+    background-image: url("../img/payments-icon.svg");
+  }
+
+  &--customs + label::before {
+    background-image: url("../img/customs-icon.svg");
+  }
+
+  &--warranties + label::before {
+    background-image: url("../img/warranty-icon.svg");
+  }
+
+  &--wholesale + label::before {
+    background-image: url("../img/wholesale-icon.svg");
+  }
 }

@@ -1,0 +1,20 @@
+.company-info {
+  padding: 20px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 32px;
+  color: $base-white-font;
+  text-align: center;
+  background-color: $base-color;
+}
+
+.company-info__title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 59px;
+  font-weight: bold;
+}
+
+.company-info__description {
+  text-align: left;
+}
