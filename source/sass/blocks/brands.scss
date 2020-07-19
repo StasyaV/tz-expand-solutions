@@ -28,3 +28,14 @@
 .brands__button {
   margin-bottom: 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .other-brands {
+    justify-content: center;
+  }
+
+  .other-brands__item {
+    margin: 0;
+    padding: 0 20px;
+  }
+}

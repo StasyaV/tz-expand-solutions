@@ -1,13 +1,17 @@
 .features__title {
-@include title-style();
-text-align: center;
-margin-bottom: 25px;
+  @include title-style();
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .features-list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
   font-size: 14px;
   line-height: 25px;
+
   &--header {
     display: none;
   }
@@ -23,12 +27,20 @@ margin-bottom: 25px;
 
 .item-title {
   color: $title-color;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .features-list__item {
   border: 1px solid $border-color;
   padding: 10px;
   border-radius: 5px;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
 }
 
 .features-list__item-tab:checked ~ .item-content {
@@ -41,19 +53,17 @@ margin-bottom: 25px;
 
 .features-list__item-tab + label::before {
   content: "";
-  display: inline-block;
-  width: 65px;
-  height: 62px;
+  display: block;
+  width: 40px;
+  height: 45px;
   background-repeat: no-repeat;
   margin-right: 17px;
-  line-height: 40px;
-  vertical-align: middle;
   cursor: pointer;
 }
 
 .features-list__item-tab {
   &--shipping + label::before {
-  background-image: url("../img/shipping-icon.svg");
+    background-image: url("../img/shipping-icon.svg");
   }
 
   &--returns + label::before {

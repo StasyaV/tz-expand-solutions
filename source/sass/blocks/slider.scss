@@ -116,3 +116,9 @@
 		transform: translateX(100%);
 	}
 }
+
+@media(min-width: $tablet-width) {
+	.slider__thumbnails {
+		margin: 5% 0 0 20%;
+	}
+}

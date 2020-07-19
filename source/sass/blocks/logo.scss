@@ -1,14 +1,22 @@
 .logo__image {
   position: relative;
   display: block;
+}
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   display: block;
-  //   width: 394px;
-  //   height: 183px;
-  //   background-image: url("/img/Subtract.svg");
-  // }
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin: 0 auto;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   display: block;
+    //   width: 394px;
+    //   height: 183px;
+    //   background-image: url("../img/Subtract.svg");
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    // }
+  }
 }
