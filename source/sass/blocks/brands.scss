@@ -1,4 +1,4 @@
-.brands {
+.brands__container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,5 +37,19 @@
   .other-brands__item {
     margin: 0;
     padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .brands {
+    padding: 40px 60px;
+    background: url("../img/brands_background.jpg");
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .brands__container {
+    width: 50%;
+    margin-right: auto;
   }
 }

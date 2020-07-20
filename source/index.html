@@ -11,30 +11,65 @@
 <body>
   <header class="header">
     <div class="header__logo logo"><img class="logo__image" src="img/logo.png" alt="Логотип магазина"></div>
-    <div class="header__button button"><a href="#" class="button__catalog">All Products</a></div>
-    <ul class="header__features-list features-list features-list--header">
-      <li class="features-list__item features-list__item--shipping">Shipping</li>
-      <li class="features-list__item features-list__item--returns">Returns</li>
-      <li class="features-list__item features-list__item--payments">Payments</li>
-      <li class="features-list__item features-list__item--customs">Customs</li>
-      <li class="features-list__item features-list__item--warranties">Warranties</li>
-      <li class="features-list__item features-list__item--wholesale">Wholesale</li>
-    </ul>
-    <nav class="main-nav">
-      <button type="button" class="main-nav__button main-nav__button--none main-nav__button--closed">Меню</button>
-      <ul class="main-nav__list menu-list menu-list--no-js menu-list--closed">
-        <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category1</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category2</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category3</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category4</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category3</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category4</a></li>
-      </ul>
-    </nav>
+    <div class="header__container container">
+      <div class="header__background">
+        <div class="header__button button"><a href="#" class="button__catalog">All Products</a></div>
+        <ul class="header__features-list features-list features-list--header">
+          <li class="features-list__item features-list__item--header features-list__item--shipping">
+            <svg class="features-list__item-icon">
+              <use xlink:href="img/sprite.svg#shipping-icon-header"></use>
+            </svg>
+            <p>Shipping</p>
+          </li>
+          <li class="features-list__item features-list__item--header features-list__item--returns">
+            <svg class="features-list__item-icon">
+              <use xlink:href="img/sprite.svg#returns-icon-header"></use>
+            </svg>
+            <p>Returns</p>
+          </li>
+          <li class="features-list__item features-list__item--header features-list__item--payments">
+            <svg class="features-list__item-icon">
+              <use xlink:href="img/sprite.svg#payments-icon-header"></use>
+            </svg>
+            <p>Payments</p>
+          </li>
+          <li class="features-list__item features-list__item--header features-list__item--customs">
+            <svg class="features-list__item-icon">
+              <use xlink:href="img/sprite.svg#customs-icon-header"></use>
+            </svg>
+            <p>Customs</p>
+          </li>
+          <li class="features-list__item features-list__item--header features-list__item--warranties">
+            <svg class="features-list__item-icon">
+              <use xlink:href="img/sprite.svg#warranty-icon-header"></use>
+            </svg>
+            <p>Warranties</p>
+          </li>
+          <li class="features-list__item features-list__item--header features-list__item--wholesale">
+            <svg class="features-list__item-icon">
+              <use xlink:href="img/sprite.svg#wholesale-icon-header"></use>
+            </svg>
+            <p>Wholesale</p>
+          </li>
+        </ul>
+      </div>
+      <nav class="main-nav">
+        <button type="button" class="main-nav__button main-nav__button--none main-nav__button--closed">Меню</button>
+        <ul class="main-nav__list menu-list menu-list--no-js menu-list--closed">
+          <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category1</a></li>
+          <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category2</a></li>
+          <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category3</a></li>
+          <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category4</a></li>
+          <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category3</a></li>
+          <li class="menu-list__item"><a href="#" class="menu-list__item-link">Category4</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
-    <section class="product">
-      <div class="container">
+
+    <div class="container">
+      <section class="product">
         <div class="product__slider slider">
           <ul class="slider__slides slides">
             <li id="slide1"><img src="img/chips.jpg" alt="Фото продукта"></li>
@@ -67,186 +102,200 @@
             Ut enim ad minim veniam.</p>
           <p class="info__description info__description--weight">Weight: <span>50g</span></p>
         </div>
-      </div>
-    </section>
-    <section class="additional-product">
-      <h2 class="additional-product__title">You may also like</h2>
-      <ul class="additional-product__list">
-        <li class="additional-item">
-          <img src="img/image-5.jpg" alt="Chocolate Image" class="additional-item__image">
-          <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-          <p class="additional-item__price">16.50$</p>
-          <a href="#" class="additional-item__button button">Take a look</a>
-        </li>
-        <li class="additional-item">
-          <img src="img/image-6.jpg" alt="Chocolate Image" class="additional-item__image">
-          <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur</p>
-          <p class="additional-item__price">102.99</p>
-          <a href="#" class="additional-item__button button">Take a look</a>
-        </li>
-        <li class="additional-item">
-          <img src="img/image-7.jpg" alt="Chocolate Image" class="additional-item__image">
-          <p class="additional-item__name">Lorem ipsum dolor</p>
-          <p class="additional-item__price">2$</p>
-          <a href="#" class="additional-item__button button">Take a look</a>
-        </li>
-      </ul>
-    </section>
-    <section class="brands container">
-      <h2 class="visually-hidden">Our brands</h2>
-      <ul class="brands__list main-brands">
-        <li class="main-brands__item"><img src="img/logo.png" alt="Лого магазина"></li>
-      </ul>
-      <ul class="brands__list other-brands">
-        <li class="other-brands__item"><img src="img/brands_logo_1.png" alt="Логотипы компаний партнёров"></li>
-        <li class="other-brands__item"><img src="img/brands_logo_2.png" alt="Логотипы компаний партнёров"></li>
-        <li class="other-brands__item"><img src="img/brands_logo_3.png" alt="Логотипы компаний партнёров"></li>
-      </ul>
-      <div class="brands__button button">All products</div>
-    </section>
-    <section class="additional-product">
-      <h2 class="additional-product__title">You may also like</h2>
-      <ul class="additional-product__list">
-        <li class="additional-item">
-          <img src="img/image-5.jpg" alt="Chocolate Image" class="additional-item__image">
-          <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-          <p class="additional-item__price">16.50$</p>
-          <a href="#" class="additional-item__button button">Take a look</a>
-        </li>
-        <li class="additional-item">
-          <img src="img/image-6.jpg" alt="Chocolate Image" class="additional-item__image">
-          <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur</p>
-          <p class="additional-item__price">102.99</p>
-          <a href="#" class="additional-item__button button">Take a look</a>
-        </li>
-        <li class="additional-item">
-          <img src="img/image-7.jpg" alt="Chocolate Image" class="additional-item__image">
-          <p class="additional-item__name">Lorem ipsum dolor</p>
-          <p class="additional-item__price">2$</p>
-          <a href="#" class="additional-item__button button">Take a look</a>
-        </li>
-      </ul>
-    </section>
-    <section class="company-info">
-      <h2 class="visually-hidden">О компании "Живая еда"</h2>
-      <p class="company-info__title">About us</p>
-      <p class="company-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-    <section class="features container">
-      <h2 class="visually-hidden">Принципы работы магазина "Живая еда"</h2>
-      <p class="features__title">Our policies</p>
-      <ul class="features__list features-list">
-        <li class="features-list__item item">
-          <input class="features-list__item-tab features-list__item-tab--shipping" type="radio" id="feature-1"
-            name="features-group" checked>
-          <label for="feature-1" class="item-title">Shipping</label>
-          <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </section>
+      <section class="additional-product">
+        <h2 class="additional-product__title">You may also like</h2>
+        <ul class="additional-product__list">
+          <li class="additional-item">
+            <img src="img/image-5.jpg" alt="Chocolate Image" class="additional-item__image">
+            <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p class="additional-item__price">16.50$</p>
+            <a href="#" class="additional-item__button button">Take a look</a>
+          </li>
+          <li class="additional-item">
+            <img src="img/image-6.jpg" alt="Chocolate Image" class="additional-item__image">
+            <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur</p>
+            <p class="additional-item__price">102.99</p>
+            <a href="#" class="additional-item__button button">Take a look</a>
+          </li>
+          <li class="additional-item">
+            <img src="img/image-7.jpg" alt="Chocolate Image" class="additional-item__image">
+            <p class="additional-item__name">Lorem ipsum dolor</p>
+            <p class="additional-item__price">2$</p>
+            <a href="#" class="additional-item__button button">Take a look</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="brands">
+        <h2 class="visually-hidden">Our brands</h2>
+        <div class="brands__container">
+          <ul class="brands__list main-brands">
+            <li class="main-brands__item"><img src="img/logo.png" alt="Лого магазина"></li>
+          </ul>
+          <ul class="brands__list other-brands">
+            <li class="other-brands__item"><img src="img/brands_logo_1.png" alt="Логотипы компаний партнёров"></li>
+            <li class="other-brands__item"><img src="img/brands_logo_2.png" alt="Логотипы компаний партнёров"></li>
+            <li class="other-brands__item"><img src="img/brands_logo_3.png" alt="Логотипы компаний партнёров"></li>
+          </ul>
+          <div class="brands__button button">All products</div>
+        </div>
+      </section>
+      <section class="additional-product">
+        <h2 class="additional-product__title">You may also like</h2>
+        <ul class="additional-product__list">
+          <li class="additional-item">
+            <img src="img/image-5.jpg" alt="Chocolate Image" class="additional-item__image">
+            <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p class="additional-item__price">16.50$</p>
+            <a href="#" class="additional-item__button button">Take a look</a>
+          </li>
+          <li class="additional-item">
+            <img src="img/image-6.jpg" alt="Chocolate Image" class="additional-item__image">
+            <p class="additional-item__name">Lorem ipsum dolor sit amet, consectetur</p>
+            <p class="additional-item__price">102.99</p>
+            <a href="#" class="additional-item__button button">Take a look</a>
+          </li>
+          <li class="additional-item">
+            <img src="img/image-7.jpg" alt="Chocolate Image" class="additional-item__image">
+            <p class="additional-item__name">Lorem ipsum dolor</p>
+            <p class="additional-item__price">2$</p>
+            <a href="#" class="additional-item__button button">Take a look</a>
+          </li>
+        </ul>
+      </section>
+      <section class="company-info">
+        <h2 class="visually-hidden">О компании "Живая еда"</h2>
+        <div class="company-info__container">
+          <p class="company-info__title">About us</p>
+          <p class="company-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>
-        </li>
-        <li class="features-list__item">
-          <input class="features-list__item-tab features-list__item-tab--returns" type="radio" id="feature-2"
-            name="features-group">
-          <label for="feature-2" class="item-title">Returns</label>
-          <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-        </li>
-        <li class="features-list__item">
-          <input class="features-list__item-tab features-list__item-tab--payments" type="radio" id="feature-3"
-            name="features-group">
-          <label for="feature-3" class="item-title">Payments</label>
-          <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-        </li>
-        <li class="features-list__item">
-          <input class="features-list__item-tab features-list__item-tab--customs" type="radio" id="feature-4"
-            name="features-group">
-          <label for="feature-4" class="item-title">Customs</label>
-          <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-        </li>
-        <li class="features-list__item">
-          <input class="features-list__item-tab features-list__item-tab--warranties" type="radio" id="feature-5"
-            name="features-group">
-          <label for="feature-5" class="item-title">Warranties</label>
-          <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-        </li>
-        <li class="features-list__item">
-          <input class="features-list__item-tab features-list__item-tab--wholesale" type="radio" id="feature-6"
-            name="features-group">
-          <label for="feature-6" class="item-title">Wholesale</label>
-          <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-        </li>
-      </ul>
-    </section>
+        </div>
+      </section>
+      <section class="features container">
+        <h2 class="visually-hidden">Принципы работы магазина "Живая еда"</h2>
+        <p class="features__title">Our policies</p>
+        <ul class="features__list features-list">
+          <li class="features-list__item item">
+            <input class="features-list__item-tab features-list__item-tab--shipping" type="radio" id="feature-1"
+              name="features-group" checked>
+            <label for="feature-1" class="item-title">Shipping</label>
+            <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </li>
+          <li class="features-list__item">
+            <input class="features-list__item-tab features-list__item-tab--returns" type="radio" id="feature-2"
+              name="features-group">
+            <label for="feature-2" class="item-title">Returns</label>
+            <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </li>
+          <li class="features-list__item">
+            <input class="features-list__item-tab features-list__item-tab--payments" type="radio" id="feature-3"
+              name="features-group">
+            <label for="feature-3" class="item-title">Payments</label>
+            <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </li>
+          <li class="features-list__item">
+            <input class="features-list__item-tab features-list__item-tab--customs" type="radio" id="feature-4"
+              name="features-group">
+            <label for="feature-4" class="item-title">Customs</label>
+            <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </li>
+          <li class="features-list__item">
+            <input class="features-list__item-tab features-list__item-tab--warranties" type="radio" id="feature-5"
+              name="features-group">
+            <label for="feature-5" class="item-title">Warranties</label>
+            <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </li>
+          <li class="features-list__item">
+            <input class="features-list__item-tab features-list__item-tab--wholesale" type="radio" id="feature-6"
+              name="features-group">
+            <label for="feature-6" class="item-title">Wholesale</label>
+            <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <div class="footer__payments payments">
       <p class="payments__title">Payments:</p>
       <img src="img/payment-icons.png" alt="Payments icons" class="payments__ico">
@@ -256,7 +305,7 @@
       <p class="copyright__description">Powered by Expand Solutions</p>
     </div>
   </footer>
-<script src="js/script.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

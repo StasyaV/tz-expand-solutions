@@ -111,33 +111,13 @@
   }
 }
 
-// @media (min-width: $desctop-width) {
-//   .main-nav {
-//     position: relative;
-//   }
+@media (min-width: $desktop-width) {
+  .menu-list {
+    padding: 0 30px;
+  }
 
-//   .menu__item {
-//     font-weight: normal;
-
-//     &--desctop-index::after {
-//       position: absolute;
-//       top: 0;
-//       left: -126px;
-//       z-index: -1;
-//       content: "";
-//       display: block;
-//       width: 720px;
-//       height: 696px;
-//       background-image: url("../img/index-background-desktop@1x.jpg");
-//       background-repeat: no-repeat;
-//     }
-
-//     &--desctop-index a {
-//       color: #ffffff;
-//     }
-
-//     &--desctop-active {
-//       border-bottom: 1px solid #ffffff;
-//     }
-//   }
-// }
+  .menu-list__item {
+    padding: 20px 0;
+    border: none;
+  }
+}

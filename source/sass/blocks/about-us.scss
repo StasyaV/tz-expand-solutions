@@ -18,3 +18,31 @@
 .company-info__description {
   text-align: left;
 }
+
+@media(min-width: $desktop-width) {
+  .company-info__container {
+    width: 60%;
+  }
+
+  .company-info {
+    position: relative;
+    padding: 80px 90px;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      content: "";
+      display: block;
+      width: 40%;
+      height: 494px;
+      background-image: url("../img/yellow-wives.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .company-info__description {
+    text-align: center;
+  }
+}

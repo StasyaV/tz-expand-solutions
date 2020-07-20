@@ -68,3 +68,20 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-product__title {
+    margin: 0;
+  }
+
+  .additional-product__list {
+    padding: 70px 90px;
+  }
+
+  .additional-item {
+    &:hover,
+    &:focus {
+      box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
