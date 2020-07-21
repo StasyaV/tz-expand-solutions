@@ -1,10 +1,12 @@
 .brands__container {
   width: 100%;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  border-bottom: 1px solid $border-color;
 }
 
 .brands__list {
@@ -14,15 +16,18 @@
 .other-brands {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-bottom: 50px;
 }
 
 .other-brands__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  margin: 0;
+  padding: 0 20px;
+}
+
+.other-brands__item {
+  margin: 0;
 }
 
 .brands__button {
@@ -30,14 +35,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .other-brands {
-    justify-content: center;
-  }
 
-  .other-brands__item {
-    margin: 0;
-    padding: 0 20px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -51,5 +49,6 @@
   .brands__container {
     width: 50%;
     margin-right: auto;
+    border-bottom: none;
   }
 }

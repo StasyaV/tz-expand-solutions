@@ -8,6 +8,7 @@
   @include list-reset();
   display: flex;
   flex-direction: column;
+  padding: 0 40px;
   margin-bottom: 50px;
   font-size: 14px;
   line-height: 25px;
@@ -20,7 +21,7 @@
 .item-content {
   display: none;
   padding: 20px;
-  color: $feature-color;
+  color: $title-color;
   background-color: $tab-background;
   border: 1px solid $border-color;
 }
@@ -97,6 +98,7 @@
   .features-list {
     display: flex;
     flex-direction: row;
+    padding: 0;
     padding-bottom: 190px;
 
     &--header {
@@ -117,7 +119,7 @@
 
    .features-list__item {
      border: none;
-     position: relative;
+     padding: 0;
 
      &--header {
       display: flex;
@@ -134,21 +136,69 @@
 
   .item-content {
     position: absolute;
+    margin: 0;
     left: 10%;
     width: 850px;
     z-index: 10;
+  }
 
-    &::before {
+  .item-title {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+
+    &:hover,
+    &:active {
+      border: 1px solid $base-color;
+    }
+
+    &::after {
       content: "";
-      display: block;
+      display: none;
       position: absolute;
-      top: -40px;
+      top: 35px;
+      left: 25px;
       border: 20px solid transparent;
       border-bottom: 20px solid $border-color;
     }
   }
 
-  .features-list__item-tab:checked ~ .item-content::before {
-    left: 5%;
+  .features-list__item-tab:checked ~ .item-title {
+    border: 1px solid $base-color;
+  }
+
+  .features-list__item-tab:checked ~ .item-title::after {
+    display: block;
+  }
+
+  .features-list__item-content--header {
+    display: none;
+    width: 450px;
+    top: 88px;
+    left: -350px;
+  }
+
+  .features-list__item--header {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      border: 20px solid transparent;
+      border-bottom: 20px solid $border-color;
+    }
+
+    &:hover {
+      .features-list__item-content--header {
+        display: block;
+      }
+      &::before {
+        display: block;
+      }
+    }
   }
 }

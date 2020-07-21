@@ -1,6 +1,6 @@
 .footer {
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 40px 0;
   color: $title-color;
   font-size: 14px;
   line-height: 28px;
@@ -20,5 +20,19 @@
 @media (min-width: $tablet-width) {
   .footer {
     padding: 30px 0;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .footer__payments {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .payments__title {
+    margin-right: 30px;
   }
 }

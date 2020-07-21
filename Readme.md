@@ -18,3 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 1. Установка связей npm i
 2. Сборка - gulp (npm run build - запуск сборки, npm start - запуск сервера)
 3. Препроцессор - sass
+
+
+***ПРИМЕЧАНИЕ
+Фото для галереи были заменены, т.к. в макете они ужасного качества
