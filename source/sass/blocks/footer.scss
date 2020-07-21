@@ -1,66 +1,38 @@
 .footer {
   margin: 0 auto;
-  font-family: $font-arial;
-  color: $font-grey;
+  padding: 40px 0;
+  color: $title-color;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 28px;
+  font-weight: bold;
   text-align: center;
-  background-color: $background-color;
+  border-top: 1px solid $border-color;
 }
 
-.footer__contacts-invitation {
-  font-family: $font-oswald;
-  font-size: 16px;
-  color: $font-black;
-  text-transform: uppercase;
+.payments__title {
+  margin: 0;
 }
 
-.footer__contacts {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  background-color: #ffffff;
-  padding: 25px 20px;
-}
-
-.footer__logo {
-  margin-top: 39px;
-  margin-bottom: 31px;
+.copyright__description {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .footer__contacts {
-    padding: 69px 71px;
-    margin: 0 auto;
-  }
-
-  .footer__contacts-invitation {
-    max-width: 200px;
-    text-align: left;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .footer__contacts-address {
-    max-width: 200px;
-    font-size: 16px;
-    text-align: right;
-  }
-
-  .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 30px;
-  }
-
-  .footer__logo {
-    margin: 0;
+  .footer {
+    padding: 30px 0;
   }
 }
 
-@media (min-width: $desctop-width) {
-  .footer {
-    width: 100%;
+@media(min-width: $desktop-width) {
+  .footer__payments {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .payments__title {
+    margin-right: 30px;
   }
 }

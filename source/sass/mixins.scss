@@ -3,15 +3,17 @@
   font-weight: bold;
 }
 
-@mixin title() {
+@mixin title-style() {
+  margin: 0;
   font-family: $font;
   color: $title-color;
   font-size: 42px;
   line-height: 59px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @mixin list-reset() {
   list-style: none;
   padding: 0;
+  margin: 0;
 }

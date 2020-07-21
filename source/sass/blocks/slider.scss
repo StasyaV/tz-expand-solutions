@@ -1,0 +1,89 @@
+.slider {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider__slides {
+  @include list-reset();
+  overflow: hidden;
+  width: fit-content;
+  height: 70vmin;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.slider__slides > li {
+	width: fit-content;
+	height: 70vmin;
+	padding: 0 40px;
+	position: absolute;
+	right: 50%;
+    transform: translateX(50%);
+	z-index: 1;
+	overflow: hidden;
+}
+
+.slider__slides > li > img {
+	width: 100%;
+	height: auto;
+}
+
+.slider__thumbnails {
+	display: block;
+	position: relative;
+	@include list-reset();
+  margin-left: 10%;
+}
+
+.slider__thumbnails > li {
+  float: left;
+  width: 15%;
+  margin-right: 10px;
+}
+
+.slider__thumbnails > li > a {
+	display: block;
+}
+
+.slider__thumbnails > li > a > img {
+	max-width: 100%;
+	height: auto;
+}
+
+.slider__slides li:target {
+	z-index: 3;
+}
+
+
+@media(min-width: $tablet-width) {
+  .slider__slides {
+    height: 50vmin;
+  }
+
+  .slider__slides > li {
+    height: 50vmin;
+  }
+	.slider__thumbnails {
+		margin: 5% 0 0 20%;
+	}
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 50%;
+  }
+
+  .slider__slides, .slider__slides > li {
+    height: 40vmin;
+  }
+
+  .slider__thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+}

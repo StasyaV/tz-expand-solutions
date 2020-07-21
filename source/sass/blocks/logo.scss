@@ -1,5 +1,37 @@
 .logo__image {
-  display: inline-block;
-  line-height: 41px;
-  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    position: relative;
+    padding-top: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      right: 50%;
+      transform: translateX(50%);
+      display: block;
+      width: 394px;
+      height: 183px;
+      background-image: url("../img/Subtract.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .logo__image {
+    width: 282px;
+    height: 140px;
+  }
+
 }

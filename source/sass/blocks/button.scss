@@ -1,21 +1,21 @@
 .button {
   display: inline-block;
-  min-width: 280px;
+  min-width: 180px;
   height: 40px;
-  font-family: $font-oswald;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 40px;
-  color: #ffffff;
+  color: $title-color;
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-  background-color: $base-color;
+  text-decoration: none;
+  background-color: $button-color;
   border: none;
+  border-radius: 100px;
   cursor: pointer;
 
-  &--show-more {
-    background-color: $background-color;
-    color: $font-grey;
+  &:hover {
+    background-color: $base-hover-color;
   }
 }
